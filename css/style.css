@@ -1,0 +1,214 @@
+:root{
+    --milk:#7fff00;
+    --white:#ffffff;
+    --violet:blueviolet;
+}
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-shadow:
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+.landing{
+    background-image: url('../FRONT PIC.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header a{
+    text-decoration: none;
+    color: #7fff00;
+    min-width: 120px
+}
+
+header{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    font-size: 1.5em;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 250px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+}
+
+nav a{
+    flex: 1;
+    align-items: center;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+header a i,nav a i{
+    margin-right: .5em;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tagline1{
+    color: rgb(222, 245, 14);
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-top: 10em;
+}
+
+.tagline2{
+    color: #1915f1;
+    font-size: 1.5em;
+}
+
+.maintext div{
+    margin-top: .95em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin-top: .7em;
+    border-radius: 10px;
+    padding: .6em;
+    background-color: orange;
+    color: #ffffff;
+    border: 2px solid orangered;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background: linear-gradient(to right,orange,orangered);
+    font-family:Arial, Helvetica, sans-serif
+
+}
+#menuhead,#locheading{
+    background: linear-gradient(to right,orange,orangered);
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    color: #FFE61B;
+}
+
+.menu th{
+    color: #B5FE83;
+    font-size: 1.5em;
+
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row: span 2;
+}
+
+.locations{
+    background: linear-gradient(to right,orange,orangered);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: #B5FE83;
+    margin-bottom: .8em;
+}
+
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: .25em 1em;
+}
+
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+    
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
+}
